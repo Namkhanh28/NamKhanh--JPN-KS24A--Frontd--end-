@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Tracker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../CSS/product-manager.css">
+</head>
+<body>
+    <div class="container">
+
+        <aside class="sidebar">
+            <h2>📚Study Tracker</h2>
+            <p>Quản lý tiến độ học tập</p>
+            <ul>
+                <li><a href="#" class="active">📊 Thống kê</a></li>
+                <li><a href="#">📝 Quản lý môn học</a></li>
+                <li><a href="../PAGES/responsive.html">📖 Quản lý bài học</a></li>
+            </ul>
+        </aside>
+        <main class="content">
+            <div class="navbar"> 
+                <i class="fa-solid fa-house"></i>
+                <nav class="info">
+                <a href=""><i class="fa-solid fa-bell"></i></a>
+                <a href=""><i class="fa-solid fa-comment"></i></a>
+                <img src="../assets/images/avatar-trang-4.jpg" width="40px" height="40px">
+                </nav>
+            </div>
+            <header class="searching">
+
+                <button class="add-btn"><i class="fa-solid fa-plus"></i>Thêm mới môn học</button>
+                <select id="choose" placeholder="Tình trạng môn học">
+                    <option value="All">Tất cả</option>
+                    <option value="Đang hoạt động">🟢 Đang hoạt động</option>
+                    <option value="Ngừng hoạt động"> 🔴Ngừng hoạt động</option>
+                </select><br>
+                <input type="text" placeholder="Tìm kiếm môn học theo tên...">
+            </header>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tên môn học</th>
+                        <th>Trạng thái</th>
+                        <th>Chức năng</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lập trình C</td>
+                        <td class="active">🟢 Đang hoạt động</td>
+                        <td>
+                            <button class="edit">✏️</button>
+                            <button class="delete">🗑️</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Lập trình Frontend với ReactJS</td>
+                        <td class="inactive">🔴 Ngừng hoạt động</td>
+                        <td>
+                            <button class="edit">✏️</button>
+                            <button class="delete">🗑️</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table border="1">
+                <thead>
+                   <tr>
+                       <th><input type="checkbox">Tất cả</th>
+                       <th>Tên bài học</th>
+                       <th>Trạng thái</th>
+                       <th>Chức năng</th>
+                   </tr>
+                </thead>
+                <tbody>
+                    <tr> 
+                        <th><input type="checkbox"></th>
+                        <td>Lập trình C</td>
+                        <td class="active">🟢 Đang hoạt động</td>
+                        <td>
+                            <button class="edit">✏️</button>
+                            <button class="delete">🗑️</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><input type="checkbox"></th>
+                        <td>Lập trình Frontend với ReactJS</td>
+                        <td class="inactive">🔴 Ngừng hoạt động</td>
+                        <td>
+                            <button class="edit">✏️</button>
+                            <button class="delete">🗑️</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+
+            <footer class="pagination">
+                <button>&lt;</button>
+                <button class="active">1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>...</button>
+                <button>20</button>
+                <button>&gt;</button>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>
