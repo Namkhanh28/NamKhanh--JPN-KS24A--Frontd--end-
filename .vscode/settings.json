@@ -1,3 +1,7 @@
 {
-    "liveServer.settings.port": 5502
+    "liveServer.settings.JSON": 5502
+    "[latex]": {
+        "files.autoSave": "off",
+    },
+
 }
